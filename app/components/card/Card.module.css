@@ -1,7 +1,7 @@
 .cardContainer {
 	display: flex;
 	flex-direction: column;
-	background-color: #95dada;
+	background-color: aliceblue;
 	border: 1px solid grey;
 	border-radius: 5px;
 	padding: 25px;
@@ -11,12 +11,26 @@
 	transform: translateZ(0);
 	transition: transform 0.25s ease-out;
 }
-
-.cardContainer:hover {
+.cardContainer.matched {
+	background-color: #95dada;
+}
+.cardContainer:hover:not(.matched) {
 	transform: scale(1.05);
 }
+
 .cardImg {
 	width: 180px;
 	height: 180px;
+	opacity: 0;
 	align-self: center;
+}
+.cardImg.selected {
+	background-color: black;
+}
+.cardContainer.matched .cardImg,
+.cardImg.show {
+	opacity: 1;
+}
+.cardImg.hide {
+	opacity: 0;
 }
