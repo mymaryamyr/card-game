@@ -5,3 +5,17 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 20px;
 }
+.button {
+	width: 120px;
+	margin: 20px auto;
+	height: 40px;
+	color: black;
+	background-color: #95dada;
+	border: 1px solid grey;
+	border-radius: 5px;
+	transform: translateZ(0);
+	transition: transform 0.25s ease-out;
+}
+.button:hover {
+	transform: scale(1.05);
+}
