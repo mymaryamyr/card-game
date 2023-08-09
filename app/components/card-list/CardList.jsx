@@ -10,7 +10,6 @@ export default function CardList({ monsters }) {
 	const [isFirstTime, setIsFirstTime] = useState(true);
 	const [modifiedMonsters, setModifiedMonsters] = useState([]);
 	const [status, setStatus] = useState('show');
-
 	const timeout = useRef(null);
 
 	const evaluate = (monster) => {
